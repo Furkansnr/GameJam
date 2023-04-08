@@ -6,9 +6,11 @@ public class CanVeMotivasyon : MonoBehaviour
 {
     public int maxMotive = 100;
     public int currentMotive = 100;
+    public GameObject pcpanel;
     void Start()
     {
-        
+        pcpanel = GameObject.FindWithTag("pcpanel");
+        pcpanel.SetActive(false);
     }
 
     

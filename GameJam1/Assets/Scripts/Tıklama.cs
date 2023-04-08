@@ -24,6 +24,7 @@ public class Tıklama : MonoBehaviour
                       {
                           Debug.Log("Bilgisyara basıldı selam ");
                           canvemotivasyon.motiveChange(-5);
+                          canvemotivasyon.pcpanel.SetActive(true);
       
       
                       }
