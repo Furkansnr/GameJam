@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class Tıklama : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public int motivation;
+    private CanveUI canveui;
     void Start()
     {
         
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
       if (Input.GetMouseButtonDown(0))
@@ -21,6 +22,7 @@ public class Tıklama : MonoBehaviour
                       if (hit.collider.gameObject.CompareTag("bilgisayar"))
                       {
                           Debug.Log("Bilgisyara basıldı selam ");
+                          canveui.motivationChange(-5);
       
       
                       }
