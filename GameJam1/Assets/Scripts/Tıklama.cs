@@ -5,9 +5,11 @@ using UnityEngine;
 public class Tıklama : MonoBehaviour
 {
     public int motivation;
+    public CanVeMotivasyon canvemotivasyon;
+    
     void Start()
     {
-        
+        canvemotivasyon = GameObject.Find("UImanager").GetComponent<CanVeMotivasyon>();
     }
 
     
@@ -21,7 +23,7 @@ public class Tıklama : MonoBehaviour
                       if (hit.collider.gameObject.CompareTag("bilgisayar"))
                       {
                           Debug.Log("Bilgisyara basıldı selam ");
-                          
+                          canvemotivasyon.motiveChange(-5);
       
       
                       }
